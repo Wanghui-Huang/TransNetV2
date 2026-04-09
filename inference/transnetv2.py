@@ -2,6 +2,9 @@ import os
 import numpy as np
 import tensorflow as tf
 
+# Force CPU usage
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+
 
 class TransNetV2:
 
